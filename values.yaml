@@ -1,0 +1,22 @@
+pgadmin4:
+  replicaCount: 1
+  service:
+    type: ClusterIP
+    port: 80
+    targetPort: 80
+    portName: http
+  ingress:
+    enabled: false
+  persistentVolume:
+    enabled: true
+    accessModes:
+      - ReadWriteOnce
+    size: 2Gi
+  containerPorts:
+    http: 80
+  resources:
+    limits:
+      memory: 256Mi
+    requests:
+      cpu: 10m
+      memory: 256Mi
