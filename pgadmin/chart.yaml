@@ -1,4 +1,4 @@
-apiVersion: v2
+apiVersion: v1alpha1 
 name: helm-pg
 description: A Helm chart for PGadmin for Kubernetes
 type: application
