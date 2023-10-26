@@ -1,6 +1,6 @@
 {
   "extends": ["config:base"],
-  "helm-requirements": {
+  "helmv3": {
     "enabled": true,
     "fileMatch": ["^Chart\\.yaml$"]
   }
